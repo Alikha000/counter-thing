@@ -5,21 +5,18 @@ let round = 0
 
 //inc fun-------------------------
 function inc() {
-    
     let rounds = document.getElementById("rounds")
     let counts = document.getElementById("count")
-
-
-
-
-    if (count >= 10) {
+    let roundMax = document.getElementById("round-max").value;
+    count += 1
+ 
+   if (count >= roundMax) {
         count = 0
         round += 1
     }
 
-
-    count += 1
     counts.textContent = count
+
     rounds.textContent = "rounds:" + round
 
 }
