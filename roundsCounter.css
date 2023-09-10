@@ -37,12 +37,12 @@ button {
   font-weight: bold;
   color: aquamarine;
   border: none;
-  transition: ease-in-out 0.3s ;
+  transition: ease-in-out 0.3s;
 }
 
 button:hover {
-  color:  rgb(0, 205, 137);
-  background-color:aquamarine;
+  color: rgb(0, 205, 137);
+  background-color: aquamarine;
 }
 
 .btns {
@@ -72,11 +72,35 @@ button:hover {
   }
 }
 
-
-.data{
+.data {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 50vh;
 }
+
+#round-max {
+  border: none;
+  background-color: rgb(0, 205, 137);
+  outline: none;
+  border-radius: 20px;
+  height: 80px;
+  width: 150px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  
+}
+input[type=number]{
+  appearance: textfield;
+}
+
