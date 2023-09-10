@@ -1,3 +1,3 @@
 # counter-thing
 
-a counter that counts round every 10 counts
+a counter that counts rounds every 10 counts

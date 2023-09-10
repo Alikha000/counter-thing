@@ -3,32 +3,34 @@ let round = 0
 
 
 
+
+
+
 //inc fun-------------------------
 function inc() {
-
-
     let rounds = document.getElementById("rounds")
-    let cunt = document.getElementById("count")
-
-
-
-    if (count >= 10) {
+    let counts = document.getElementById("count")
+    let roundMax = document.getElementById("round-max").value;
+    count += 1
+ 
+   if (count >= roundMax) {
         count = 0
         round += 1
     }
 
+    counts.textContent = count
 
-    count += 1
-    cunt.textContent = count
     rounds.textContent = "rounds:" + round
+
 }
 //inc fun-------------------------
 
 
 //dec fun-------------------------
 function dec() {
+    let counts = document.getElementById("count")
     count -= 1
-    document.getElementById("count").textContent = count
+    counts.textContent = count
 
 }
 //dec fun-------------------------
