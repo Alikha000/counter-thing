@@ -5,10 +5,10 @@ let round = 0
 
 //inc fun-------------------------
 function inc() {
-
-
+    
     let rounds = document.getElementById("rounds")
-    let cunt = document.getElementById("count")
+    let counts = document.getElementById("count")
+
 
 
 
@@ -19,8 +19,9 @@ function inc() {
 
 
     count += 1
-    cunt.textContent = count
+    counts.textContent = count
     rounds.textContent = "rounds:" + round
+
 }
 //inc fun-------------------------
 
@@ -28,7 +29,7 @@ function inc() {
 //dec fun-------------------------
 function dec() {
     count -= 1
-    document.getElementById("count").textContent = count
+    counts.textContent = count
 
 }
 //dec fun-------------------------
