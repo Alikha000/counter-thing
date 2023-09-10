@@ -28,6 +28,7 @@ function inc() {
 
 //dec fun-------------------------
 function dec() {
+    let counts = document.getElementById("count")
     count -= 1
     counts.textContent = count
 
